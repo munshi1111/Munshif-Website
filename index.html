@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Website Design and Development</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      padding: 15px 20px;
+      color: white;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      background-color: #444;
+      overflow: hidden;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      display: inline-block;
+    }
+
+    nav ul li:hover {
+      background-color: #111;
+    }
+
+    .info {
+      background-color: white;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .left, .right {
+      flex: 1 1 300px;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .left {
+      background-color: #d0e6f6;
+    }
+
+    .right {
+      background-color: #f6d0d0;
+    }
+
+    form {
+      background-color: #ffffff;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 300px;
+    }
+
+    input[type=text], input[type=email], input[type=password] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type=submit] {
+      background-color: #007BFF;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #0056b3;
+    }
+
+    table {
+      width: 90%;
+      margin: 20px;
+      border-collapse: collapse;
+      background-color: white;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      padding: 12px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      form {
+        width: 90%;
+      }
+
+      table {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>My Website</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="info">
+  <p><strong>Name:</strong> John Doe</p>
+  <p><strong>Email:</strong> john@example.com</p>
+</section>
+
+<div class="container">
+  <div class="left">
+    <h2>Left Column</h2>
+    <p>This is some content on the left.</p>
+  </div>
+  <div class="right">
+    <h2>Right Column</h2>
+    <p>This is some content on the right.</p>
+  </div>
+</div>
+
+<section>
+  <h2 style="margin-left:20px;">Registration Form</h2>
+  <form>
+    <label>Name:</label>
+    <input type="text" name="name" required>
+    <label>Email:</label>
+    <input type="email" name="email" required>
+    <label>Password:</label>
+    <input type="password" name="password" required>
+    <input type="submit" value="Register">
+  </form>
+</section>
+
+<section>
+  <h2 style="margin-left:20px;">Student Table</h2>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Course</th>
+    </tr>
+    <tr>
+      <td>Ayesha</td>
+      <td>Web Design</td>
+    </tr>
+    <tr>
+      <td>Ravi</td>
+      <td>Software Eng.</td>
+    </tr>
+  </table>
+</section>
+
+</body>
+</html>
